@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@deno/mod.js';
+import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@v0.1.0-deno/mod.js';
 ```
 
 #### binaryLoopOrder( shape, stridesX, stridesY, stridesZ )
@@ -116,7 +116,7 @@ For all returned arrays, the first element corresponds to the innermost loop, an
 
 ```javascript
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
-import loopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@deno/mod.js';
+import loopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@v0.1.0-deno/mod.js';
 
 // Create ndarrays:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
