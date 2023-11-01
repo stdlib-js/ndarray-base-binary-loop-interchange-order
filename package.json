@@ -41,7 +41,7 @@
     "@stdlib/array-base-filled": "^0.1.0",
     "@stdlib/array-base-take": "^0.1.0",
     "@stdlib/array-base-zero-to": "^0.1.0",
-    "@stdlib/ndarray-base-strides2order": "^0.1.0",
+    "@stdlib/ndarray-base-strides2order": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {

@@ -21,122 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isArray = require( '@stdlib/assert-is-array' );
-var loopOrder = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof loopOrder, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns loop interchange data (row-major)', function test( t ) {
-	var sh;
-	var sx;
-	var sy;
-	var sz;
-	var o;
-
-	sh = [ 4, 2, 2 ];
-	sx = [ 4, -2, 1 ];
-	sy = [ -4, 2, 1 ];
-	sz = [ -8, 4, -2 ];
-
-	o = loopOrder( sh, sx, sy, sz );
-
-	t.notEqual( o.sh, sh, 'returns new array' );
-	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
-	t.deepEqual( o.sh, [ 2, 2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
-	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sy, sy, 'returns new array' );
-	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ 1, 2, -4 ], 'returns expected value' );
-
-	t.notEqual( o.sz, sz, 'returns new array' );
-	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns loop interchange data (column-major)', function test( t ) {
-	var sh;
-	var sx;
-	var sy;
-	var sz;
-	var o;
-
-	sh = [ 4, 2, 2 ];
-	sx = [ 1, -4, 8 ];
-	sy = [ -1, 4, 8 ];
-	sz = [ -2, 4, -8 ];
-
-	o = loopOrder( sh, sx, sy, sz );
-
-	t.notEqual( o.sh, sh, 'returns new array' );
-	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
-	t.deepEqual( o.sh, [ 4, 2, 2 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
-	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -4, 8 ], 'returns expected value' );
-
-	t.notEqual( o.sy, sy, 'returns new array' );
-	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ -1, 4, 8 ], 'returns expected value' );
-
-	t.notEqual( o.sz, sz, 'returns new array' );
-	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns loop interchange data (mixed order)', function test( t ) {
-	var sh;
-	var sx;
-	var sy;
-	var sz;
-	var o;
-
-	sh = [ 4, 2, 2 ];
-	sx = [ 4, -2, 1 ];
-	sy = [ 1, -4, -8 ];
-	sz = [ -8, 4, -2 ];
-
-	o = loopOrder( sh, sx, sy, sz );
-
-	t.notEqual( o.sh, sh, 'returns new array' );
-	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
-	t.deepEqual( o.sh, [ 2, 2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
-	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sy, sy, 'returns new array' );
-	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ -8, -4, 1 ], 'returns expected value' );
-
-	t.notEqual( o.sz, sz, 'returns new array' );
-	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'if provided empty arrays, the function returns empty arrays', function test( t ) {
-	var o = loopOrder( [], [], [], [] );
-	t.deepEqual( o.sh, [], 'returns expected value' );
-	t.deepEqual( o.sx, [], 'returns expected value' );
-	t.deepEqual( o.sy, [], 'returns expected value' );
-	t.deepEqual( o.sz, [], 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
