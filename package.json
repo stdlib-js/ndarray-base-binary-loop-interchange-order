@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "@stdlib/array-base-copy-indexed": "^0.2.2",
-    "@stdlib/array-base-filled": "^0.2.2",
     "@stdlib/array-base-take-indexed": "^0.2.2",
     "@stdlib/array-base-zero-to": "^0.2.1",
     "@stdlib/ndarray-base-strides2order": "^0.2.2",
