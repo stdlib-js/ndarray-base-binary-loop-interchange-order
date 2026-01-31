@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-binary-loop-interchange-order",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Reorder ndarray dimensions and associated strides for loop interchange.",
   "license": "Apache-2.0",
   "author": {
@@ -87,7 +87,6 @@
     "utils",
     "util"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
