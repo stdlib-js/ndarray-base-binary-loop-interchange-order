@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@esm/index.mjs';
+import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@v0.2.4-esm/index.mjs';
 ```
 
 #### binaryLoopOrder( shape, stridesX, stridesY, stridesZ )
@@ -125,7 +125,7 @@ For all returned arrays, the first element corresponds to the innermost loop, an
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
 import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 import getStrides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-strides@esm/index.mjs';
-import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@esm/index.mjs';
+import binaryLoopOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-loop-interchange-order@v0.2.4-esm/index.mjs';
 
 // Create ndarrays:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
