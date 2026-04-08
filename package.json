@@ -37,12 +37,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-loop-interchange-order": "^0.1.0",
+    "@stdlib/ndarray-base-loop-interchange-order": "^0.1.1",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.2.3",
-    "@stdlib/ndarray-array": "^0.2.2",
+    "@stdlib/ndarray-array": "^0.2.3",
     "@stdlib/ndarray-base-shape2strides": "^0.2.3",
     "@stdlib/ndarray-shape": "^0.2.3",
     "@stdlib/ndarray-strides": "^0.2.3",
